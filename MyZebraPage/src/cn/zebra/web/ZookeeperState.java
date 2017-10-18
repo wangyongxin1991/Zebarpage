@@ -28,7 +28,7 @@ public class ZookeeperState extends HttpServlet {
 		try {
 			response.setDateHeader("Expires", -1);
 			
-			//1.连接zookeeper
+            //1.连接zookeeper 123
 			final CountDownLatch cdl1 = new CountDownLatch(1);
 			ZooKeeper zk = new ZooKeeper("192.168.242.111:2181,192.168.242.112:2181,192.168.242.113:2181", 5000
 				, new Watcher(){
